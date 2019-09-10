@@ -4,8 +4,18 @@
     <div class="row" style="padding-top: 3em;"></div>
     <div class="row">
         {% for kij in kijakums %}
-            {% include 'myapp/_calendar_entry.html' %}
+        {% include 'myapp/_calendar_entry.html' %}
         {% endfor %}
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="bs-component">
+                {% for kij in kijakums %}
+                    {% include 'myapp/new_kij.html' %}
+                {% endfor %}
+                <button class="source-button btn btn-primary btn-xs" role="button" tabindex="0">&lt; &gt;</button>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
