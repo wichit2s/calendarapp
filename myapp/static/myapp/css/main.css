@@ -1,0 +1,24 @@
+body, html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url("https://picsum.photos/1280");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.boxshadow {
+    width: 50px;
+    border: 1px solid #8a4419;
+    border-style: inset;
+}
