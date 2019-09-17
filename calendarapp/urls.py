@@ -22,5 +22,6 @@ urlpatterns = [
     path('wt', views.whatthefantastic),
     path('do', views.dosomething),
     path('myapp', views.myapp),
+    path('kij/<str:title>', views.kijdetail),
     path('admin/', admin.site.urls),
 ]

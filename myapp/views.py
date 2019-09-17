@@ -15,3 +15,7 @@ def dosomething(req):
 def myapp(req):
     kijakums = Kijakum.objects.all()
     return render(req, 'myapp/myapp.html', { 'kijakums': kijakums })
+
+def kijdetail(req, title):
+    #kijakums = Kijakum.objects.all()
+    return render(req, 'myapp/kijakum.html', { 'ti': title})
