@@ -3,6 +3,17 @@
 <div class="container">
     <div class="row" style="padding-top: 3em;"></div>
     <div class="row">Nothing to declare</div>
-    <div class="row">{{ ti }}</div>
+    <div class="card text-white bg-success mb-3" style="float: left; width: 100%;">
+        <div class="card-header">
+            <img class="avatar boxshadow" src="https://picsum.photos/48">
+            {{ kij.title }}</div>
+        <div class="card-body">
+            <h4 class="card-title">{{ kij.date }}</h4>
+            <p class="card-text">
+                {{ kij.description }}<br />
+            </p>
+            <a href="kij/{{kij.id}}" class="btn btn-secondary">ทดสอบ Link</a>
+        </div>
+    </div>
 </div>
 {% endblock %}

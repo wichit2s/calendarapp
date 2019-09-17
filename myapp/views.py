@@ -16,6 +16,7 @@ def myapp(req):
     kijakums = Kijakum.objects.all()
     return render(req, 'myapp/myapp.html', { 'kijakums': kijakums })
 
-def kijdetail(req, title):
-    #kijakums = Kijakum.objects.all()
-    return render(req, 'myapp/kijakum.html', { 'ti': title})
+def kijdetail(req, id):
+    #kij = Kijakum.objects.filter(title=title)
+    kij = Kijakum.objects.get(id=id)
+    return render(req, 'myapp/kijakum.html', { 'kij': kij})
